@@ -25,6 +25,9 @@ inspecode:
 
   jscpd:
     thresholds: { num-issues: 23 }
+      # codelift#1720
+      #   23 issues on SaaS edition
+      #   22 issues on Enterprise edition
 
   misspell:
     auto-fix: true
@@ -44,4 +47,4 @@ inspecode:
 
   unused:
     options: [ --single-occurrence, --all-likelihoods ]
-    thresholds: { num-issues: 107 }
+    thresholds: { num-issues: 57 }
