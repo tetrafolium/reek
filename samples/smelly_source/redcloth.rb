@@ -133,7 +133,7 @@
 #
 # == Adding Tables
 #
-# In Textile, simple tables can be added by seperating each column by
+# In Textile, simple tables can be added by separating each column by
 # a pipe.
 #
 #     |a|simple|table|row|
@@ -337,14 +337,14 @@ class RedCloth < String
     #
     A_HLGN = /(?:(?:<>|<|>|\=|[()]+)+)/
     A_VLGN = /[\-^~]/
-    C_CLAS = '(?:\([^)]+\))'
+    C_CLASS = '(?:\([^)]+\))'
     C_LNGE = '(?:\[[^\]]+\])'
     C_STYL = '(?:\{[^}]+\})'
     S_CSPN = '(?:\\\\\d+)'
     S_RSPN = '(?:/\d+)'
     A = "(?:#{A_HLGN}?#{A_VLGN}?|#{A_VLGN}?#{A_HLGN}?)"
     S = "(?:#{S_CSPN}?#{S_RSPN}|#{S_RSPN}?#{S_CSPN}?)"
-    C = "(?:#{C_CLAS}?#{C_STYL}?#{C_LNGE}?|#{C_STYL}?#{C_LNGE}?#{C_CLAS}?|#{C_LNGE}?#{C_STYL}?#{C_CLAS}?)"
+    C = "(?:#{C_CLASS}?#{C_STYL}?#{C_LNGE}?|#{C_STYL}?#{C_LNGE}?#{C_CLASS}?|#{C_LNGE}?#{C_STYL}?#{C_CLASS}?)"
     # PUNCT = Regexp::quote( '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~' )
     PUNCT = Regexp::quote( '!"#$%&\'*+,-./:;=?@\\^_`|~' )
     PUNCT_NOQ = Regexp::quote( '!"#$&\',./:;=?@\\`|' )
