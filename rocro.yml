@@ -9,19 +9,14 @@ inspecode:
   #brakeman:
   #  thresholds: { num-issues: 999 }
 
-  ##----------------------------------------------------------------
-  ##  $ bundler-audit check --update --quiet --verbose
-  ##  /usr/local/bundle/gems/bundler-audit-0.6.1/lib/bundler/audit/scanner.rb:46:in `read': No such file or directory @ rb_sysopen - /home/rocro/src/github.com/tetrafolium/reek/Gemfile.lock (Errno::ENOENT)
-  ##  bundler-audit finished with errors.
-  ##----------------------------------------------------------------
-  #bundler-audit:
-  #  thresholds: { num-issues: 999 }
+  bundler-audit:
+    thresholds: { num-issues: 0 }
 
   cpd:
     thresholds: { num-issues: 0 }
 
   fossology:
-    thresholds: { num-issues: 999 }
+    thresholds: { num-issues: 7 }
 
   grep:
     thresholds: { num-issues: 7 }
