@@ -3,7 +3,7 @@
 module Reek
   module Spec
     #
-    # Matches a +SmellWarning+ object agains a smell type and hash of attributes.
+    # Matches a +SmellWarning+ object against a smell type and hash of attributes.
     #
     class SmellMatcher
       attr_reader :smell_warning

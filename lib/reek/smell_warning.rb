@@ -19,11 +19,11 @@ module Reek
 
     # @param smell_type [String] type of detected smell; corresponds to
     #   detector#smell_type
-    # @param context [String] name of the context in which the smell occured
-    # @param lines [Array<Integer>] list of lines on which the smell occured
+    # @param context [String] name of the context in which the smell occurred
+    # @param lines [Array<Integer>] list of lines on which the smell occurred
     # @param message [String] text describing the smell in more detail
     # @param source [String] name of the source (e.g., the file name) in which
-    #   the smell occured
+    #   the smell occurred
     # @param parameters [Hash] smell-specific parameters
     #
     # @note When using Reek's public API, you should not create SmellWarning

@@ -25,7 +25,7 @@ module Reek
       # @return [Array<SmellWarning>]
       #
       def sniff
-        class_variables_in_context.map do |variable, occurences|
+        class_variables_in_context.map do |variable, occurrences|
           lines = occurences.map(&:line)
           smell_warning(
             lines: lines,

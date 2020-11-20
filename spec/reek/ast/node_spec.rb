@@ -149,7 +149,7 @@ RSpec.describe Reek::AST::Node do
       expect(node1.hash).to eq(node2.hash)
     end
 
-    it 'hashes diferent for diferent sexps' do
+    it 'hashes different for different sexps' do
       node1 = sexp(:def, :jim, sexp(:args), sexp(:send, sexp(:int, 4), :+, sexp(:send, nil, :fred)))
       node2 = sexp(:def, :jim, sexp(:args), sexp(:send, sexp(:int, 3), :+, sexp(:send, nil, :fred)))
       expect(node1.hash).not_to eq(node2.hash)
