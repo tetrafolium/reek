@@ -202,7 +202,7 @@ RSpec.describe Reek::SmellDetectors::DuplicateMethodCall do
       expect(src).to reek_of(:DuplicateMethodCall, name: '@bravo.charlie').with_config(config)
     end
 
-    it 'does not report calls to methods specifed with a regular expression' do
+    it 'does not report calls to methods specified with a regular expression' do
       config = { Reek::SmellDetectors::DuplicateMethodCall::ALLOW_CALLS_KEY => [/charlie/] }
       src = 'def alfa; puts @bravo.charlie; puts @bravo.charlie; end'
       expect(src).not_to reek_of(:DuplicateMethodCall, name: '@bravo.charlie').with_config(config)
